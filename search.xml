@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[5656]]></title>
+    <url>%2F2019%2F03%2F15%2F5656%2F</url>
+    <content type="text"><![CDATA[00终究是忘记了 先这样吧]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[hexo搭建]]></title>
     <url>%2F2019%2F01%2F30%2Fhexo%2Fhexo%E6%90%AD%E5%BB%BA%2F</url>
     <content type="text"><![CDATA[GitHub+Hexo搭建博客 1.搭建环境准备1.下载安装Git Git官网 2.下载安装Node.js 官网 注：选择适合的32或64位版本， 安装时一路next就好。 检擦node.js和git是否安装成功，输入以下指令 123node -vnpm -vgit --version 出现版本号则表示安装成功。 2.注册GitHub1.注册到GitHub https://github.com， 点右上角sign up 填好信息注册 2.创建新库点击右侧new创建新的Repositories 3.本地配置在合适的位置创建一个文件夹，用于保存博客，例如在E盘建立一个blog文件夹后，进入文件夹。 空白处右键，点Git Bash，进入这个界面 设置全局配置 12git config –-global user.name &quot;自己的用户名&quot;git config –-global user.email &quot;自己的邮箱&quot; 成功配置 生成SSH密钥设置到GitHub 12cd ~/.sshssh-keygen -t rsa -C “自己的邮箱” 出现下图 设置ssh到GitHub 默认生成ssh key在C:\Users\username.ssh文件夹中，记事本打开id_rsa.pub 复制文件内容 打开GitHub， ssh设置是否成功 1ssh -T git@github.com 继续在git bash中操作 3.安装hexo命令 1npm install hexo-cli -g 初始化hexo 1234hexo initnpm installhexo ghexo s 进入浏览器打开http://localhost:4000/ 4.上传hexo到GitHub检查hexo版本 1hexo -v 大于hexo 3.0的上传到github的方法： 安装部署到github插件依赖 1npm install –save hexo-deployer-git 进入blog（你创建的文件夹），找到_config.yml文件打开编辑 找到最后，改成 1234deploy: type: git repo: git@github.com:user/user.github.io.git branch: master 将hexo部署到GitHub 1hexo d 部署成功 进入浏览器打开https://用户名.github.io 成功 6.next主题到https://github.com/iissnan/hexo-theme-next-themes/next 下载 0.0 注意全局配置设置到淘宝源： 1npm config set registry https://registry.npm.taobao.org 或在npm install 后加–registry=https://registry.npm.taobao.org 1npm install hexo-cli -g --registry=https://registry.npm.taobao.org Git /.ssh: No such file or directory 解决 1ssh-keygen -t rsa -C &quot;your_email@youremail.com]]></content>
