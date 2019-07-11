@@ -409,7 +409,7 @@
 <p><a href="https://nodejs.org/" target="_blank" rel="noopener">官网</a>  <a href="https://nodejs.org" target="_blank" rel="noopener">https://nodejs.org</a></p>
 <p>注：选择适合的32或64位版本，<br>   安装时一路next就好。</p>
 <p>检擦node.js和git是否安装成功，输入以下指令</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br><span class="line">git --version</span><br></pre></td></tr></table></figure>
+<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">node</span> <span class="title">-v</span></span><br><span class="line">npm -v</span><br><span class="line">git --<span class="keyword">version</span></span><br></pre></td></tr></table></figure>
 <p>出现版本号则表示安装成功。</p>
 <p>test</p>
 <img src="/2019/07/11/hexo/456.png" title="hgh">
@@ -422,39 +422,39 @@
 <p>空白处右键，点Git Bash，进入这个界面</p>
 <img src="/2019/07/11/hexo/2.jpg">
 <p>1  设置全局配置</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name &quot;username&quot;</span><br><span class="line">$ git config --global user.email &quot;username@example.com&quot;</span><br></pre></td></tr></table></figure>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git<span class="built_in"> config </span>--global user.name <span class="string">"username"</span></span><br><span class="line">$ git<span class="built_in"> config </span>--global user.email <span class="string">"username@example.com"</span></span><br></pre></td></tr></table></figure>
 <p>2  生成SSH密钥设置到GitHub</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ cd ~/.ssh</span><br><span class="line">$ ls</span><br></pre></td></tr></table></figure>
+<figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="keyword">cd</span> ~<span class="string">/.ssh</span></span><br><span class="line">$ <span class="keyword">ls</span></span><br></pre></td></tr></table></figure>
 <p>如果提示没有此文件夹</p>
 <p>运行</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;your_email@youremail.com</span><br></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">ssh-keygen</span> <span class="selector-tag">-t</span> <span class="selector-tag">rsa</span> <span class="selector-tag">-C</span> "<span class="selector-tag">your_email</span>@<span class="keyword">youremail</span>.<span class="keyword">com</span></span><br></pre></td></tr></table></figure>
 <p>3  设置ssh到GitHub</p>
 <p>默认生成ssh key在C:\Users\username.ssh文件夹中，记事本打开id_rsa.pub 复制文件内容</p>
 <p>打开GitHub</p>
 <img src="/2019/07/11/hexo/3.jpg">
 <img src="/2019/07/11/hexo/4.jpg">
 <p>检查ssh设置是否成功</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">ssh</span> <span class="selector-tag">-T</span> <span class="selector-tag">git</span>@<span class="keyword">github</span>.<span class="keyword">com</span></span><br></pre></td></tr></table></figure>
 <p>继续在git bash中操作</p>
 <h2 id="3-安装hexo"><a href="#3-安装hexo" class="headerlink" title="3.安装hexo"></a>3.安装hexo</h2><p>命令</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
+<figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-<span class="keyword">cli</span> -g</span><br></pre></td></tr></table></figure>
 <p>若运行后没有结果，重新打开git bash，尝试下面解决办法</p>
 <p>全局配置设置到淘宝源：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm config set registry https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
+<figure class="highlight gams"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm config <span class="keyword">set</span> registry <span class="comment">https:</span>//<span class="comment">registry.npm.taobao.org</span></span><br></pre></td></tr></table></figure>
 <p>或在npm install 后加–registry=<a href="https://registry.npm.taobao.org" target="_blank" rel="noopener">https://registry.npm.taobao.org</a></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g --registry=https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
-<h3 id="初始化hexo"><a href="#初始化hexo" class="headerlink" title="初始化hexo"></a>初始化hexo</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br><span class="line">npm install</span><br><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+<figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-<span class="keyword">cli</span> -g --registry=https://registry.npm.taobao<span class="meta">.org</span></span><br></pre></td></tr></table></figure>
+<h3 id="初始化hexo"><a href="#初始化hexo" class="headerlink" title="初始化hexo"></a>初始化hexo</h3><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br><span class="line">npm <span class="keyword">install</span></span><br><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
 <p>进入浏览器打开<a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a></p>
 <h2 id="4-上传hexo到GitHub"><a href="#4-上传hexo到GitHub" class="headerlink" title="4.上传hexo到GitHub"></a>4.上传hexo到GitHub</h2><p>检查hexo版本</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo -v</span><br></pre></td></tr></table></figure>
+<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">hexo -v</span></span><br></pre></td></tr></table></figure>
 <p>大于hexo 3.0的上传到github的方法：</p>
 <p>安装部署到github插件依赖</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install –save hexo-deployer-git</span><br></pre></td></tr></table></figure>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="keyword">install</span> –<span class="keyword">save</span> hexo-deployer-git</span><br></pre></td></tr></table></figure>
 <p>进入blog（你创建的文件夹），找到_config.yml文件打开编辑</p>
 <p>找到最后，改成</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy: </span><br><span class="line">type: git </span><br><span class="line">repo: git@github.com:user/user.github.io.git </span><br><span class="line">branch: master</span><br></pre></td></tr></table></figure>
+<figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">deploy</span>: </span><br><span class="line"><span class="attribute">type</span>: git </span><br><span class="line"><span class="attribute">repo</span>: git<span class="variable">@github</span>.<span class="attribute">com</span>:user/user.github.io.git </span><br><span class="line"><span class="attribute">branch</span>: master</span><br></pre></td></tr></table></figure>
 <p>将hexo部署到GitHub</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">hexo d</span></span><br></pre></td></tr></table></figure>
 <p>部署成功</p>
 <p>进入浏览器打开<a href="https://用户名.github.io" target="_blank" rel="noopener">https://用户名.github.io</a></p>
 <p>成功</p>

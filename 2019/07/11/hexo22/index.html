@@ -79,14 +79,20 @@
 
 
 
+<meta name="description" content="hexo的设置与美化">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo22">
 <meta property="og:url" content="http://yoursite.com/2019/07/11/hexo22/index.html">
 <meta property="og:site_name" content="Liquid">
+<meta property="og:description" content="hexo的设置与美化">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-07-11T09:58:56.751Z">
+<meta property="og:image" content="http://yoursite.com/2019/07/11/hexo22/1.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/07/11/hexo22/2.jpg">
+<meta property="og:updated_time" content="2019-07-11T10:48:11.425Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo22">
+<meta name="twitter:description" content="hexo的设置与美化">
+<meta name="twitter:image" content="http://yoursite.com/2019/07/11/hexo22/1.jpg">
 
 
 
@@ -336,7 +342,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2019-07-11T17:58:56+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2019-07-11T18:48:11+08:00">
                 2019-07-11
               </time>
             
@@ -370,7 +376,34 @@
       
 
       
-        
+        <h1 id="hexo的设置与美化"><a href="#hexo的设置与美化" class="headerlink" title="hexo的设置与美化"></a>hexo的设置与美化</h1><a id="more"></a>
+<h2 id="1-网站设置"><a href="#1-网站设置" class="headerlink" title="1.网站设置"></a>1.网站设置</h2><p>hexo根目录（blog文件夹下）<br>打开_config.yml文件 推荐用vscode</p>
+<img src="/2019/07/11/hexo22/1.jpg">
+<p>主要设置 注意   ： 后面有空格</p>
+<figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="meta"># Site</span></span><br><span class="line"><span class="symbol">title:</span> 网站名称</span><br><span class="line"><span class="symbol">subtitle:</span></span><br><span class="line"><span class="symbol">description:</span> 站点描述</span><br><span class="line"><span class="symbol">keywords:</span></span><br><span class="line"><span class="symbol">author:</span> 作者名称</span><br><span class="line"><span class="symbol">language:</span> zh-Hans <span class="comment">//设置网站语言</span></span><br><span class="line"><span class="symbol">timezone:</span></span><br><span class="line"></span><br><span class="line">....   <span class="comment">//省略的内容</span></span><br><span class="line"></span><br><span class="line"><span class="meta"># Directory</span></span><br><span class="line"><span class="symbol">source_dir:</span> source</span><br><span class="line"><span class="symbol">public_dir:</span> public</span><br><span class="line"><span class="symbol">tag_dir:</span> tags</span><br><span class="line"><span class="symbol">archive_dir:</span> archives</span><br><span class="line"><span class="symbol">category_dir:</span> categories</span><br><span class="line"><span class="symbol">code_dir:</span> downloads/code</span><br><span class="line"><span class="symbol">i18n_dir:</span> :lang</span><br><span class="line"><span class="symbol">skip_render:</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta"># Extensions</span></span><br><span class="line"><span class="meta">## Plugins: https:<span class="comment">//hexo.io/plugins/</span></span></span><br><span class="line"><span class="meta">## Themes: https:<span class="comment">//hexo.io/themes/</span></span></span><br><span class="line"><span class="symbol">theme:</span> next                          <span class="comment">//网站主题</span></span><br><span class="line"></span><br><span class="line"><span class="meta">##</span></span><br><span class="line"><span class="symbol">search:</span></span><br><span class="line"><span class="symbol">  path:</span> search.xml</span><br><span class="line"><span class="symbol">  field:</span> post</span><br><span class="line"><span class="symbol">  format:</span> html</span><br><span class="line"><span class="symbol">  limit:</span> <span class="number">10000</span></span><br><span class="line"></span><br><span class="line"><span class="meta"># Deployment</span></span><br><span class="line"><span class="meta">## Docs: https:<span class="comment">//hexo.io/docs/deployment.html</span></span></span><br><span class="line"><span class="symbol">deploy:</span></span><br><span class="line"><span class="symbol">  type:</span> </span><br><span class="line"><span class="symbol">  repo:</span>                     <span class="comment">//部署信息</span></span><br><span class="line"><span class="symbol">  branch:</span> master</span><br></pre></td></tr></table></figure>
+<h2 id="2-更换hexo主题"><a href="#2-更换hexo主题" class="headerlink" title="2.更换hexo主题"></a>2.更换hexo主题</h2><p>我用的的是next主题</p>
+<p>到<a href="https://github.com/iissnan/hexo-theme-next-themes/next" target="_blank" rel="noopener">https://github.com/iissnan/hexo-theme-next-themes/next</a> 下载</p>
+<img src="/2019/07/11/hexo22/2.jpg">
+<p>网站配置文件按上面修改</p>
+<h2 id="3-主题美化"><a href="#3-主题美化" class="headerlink" title="3.主题美化"></a>3.主题美化</h2><p>路径\themes\next，打开_config.yml文件</p>
+<figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">menu:</span>                           修改菜单 添加的话只需去掉前面的<span class="meta">#</span></span><br><span class="line"><span class="symbol">  home:</span> / || home</span><br><span class="line"><span class="symbol">  about:</span> <span class="meta-keyword">/about/</span> || user</span><br><span class="line"><span class="symbol">  tags:</span> <span class="meta-keyword">/tags/</span> || tags</span><br><span class="line"><span class="symbol">  categories:</span> <span class="meta-keyword">/categories/</span> || th</span><br><span class="line"><span class="symbol">  archives:</span> <span class="meta-keyword">/archives/</span> || archive</span><br><span class="line">  <span class="meta">#schedule: /schedule/ || calendar</span></span><br><span class="line">  <span class="meta">#sitemap: /sitemap.xml || sitemap</span></span><br><span class="line">  <span class="meta">#commonweal: /404/ || heartbeat</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight vala"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta"># Schemes                选择主题</span></span><br><span class="line"><span class="meta">#scheme: Muse</span></span><br><span class="line">scheme: Mist</span><br><span class="line"><span class="meta">#scheme: Pisces</span></span><br><span class="line"><span class="meta">#scheme: Gemini</span></span><br></pre></td></tr></table></figure>
+<p>其它选项可自行尝试和修改</p>
+<h1 id="插件设置"><a href="#插件设置" class="headerlink" title="插件设置"></a>插件设置</h1><h2 id="1-本地搜索"><a href="#1-本地搜索" class="headerlink" title="1.本地搜索"></a>1.本地搜索</h2><p>在hexo的根目录执行以下命令。</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="keyword">install</span> hexo-generator-searchdb <span class="comment">--save</span></span><br></pre></td></tr></table></figure>
+<p>打开主题配置文件,搜索关键字local_search,将enable的值设置为 true：</p>
+<figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta"># Local search</span></span><br><span class="line"><span class="meta"># Dependencies: https:<span class="comment">//github.com/flashlab/hexo-generator-search</span></span></span><br><span class="line"><span class="symbol">local_search:</span></span><br><span class="line"><span class="symbol">  enable:</span> ture</span><br></pre></td></tr></table></figure>
+<p>打开站点配置文件，搜索关键词search</p>
+<figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">##</span></span><br><span class="line"><span class="symbol">search:</span></span><br><span class="line"><span class="symbol">  path:</span> search.xml</span><br><span class="line"><span class="symbol">  field:</span> post</span><br><span class="line"><span class="symbol">  format:</span> html</span><br><span class="line"><span class="symbol">  limit:</span> <span class="number">10000</span></span><br></pre></td></tr></table></figure>
+<h2 id="2-设置代码高亮"><a href="#2-设置代码高亮" class="headerlink" title="2.设置代码高亮"></a>2.设置代码高亮</h2><p>在站点配置文件中，搜索highlight:</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">highlight:</span></span><br><span class="line"><span class="attr">  enable:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">  line_number:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">  auto_detect:</span> <span class="string">ture</span></span><br><span class="line"><span class="attr">  tab_replace:</span></span><br></pre></td></tr></table></figure>
+<p>主题配置文件，搜索highlight_theme，修改代码主题样式：</p>
+<figure class="highlight vala"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta"># Code Highlight theme</span></span><br><span class="line"><span class="meta"># Available value:</span></span><br><span class="line"><span class="meta">#    normal | night | night eighties | night blue | night bright</span></span><br><span class="line"><span class="meta"># https://github.com/chriskempson/tomorrow-theme</span></span><br><span class="line">highlight_theme: night</span><br></pre></td></tr></table></figure>
+<p>…………</p>
+<p>推荐链接: </p>
+<p><a href="https://www.jianshu.com/p/85192626faf3" target="_blank" rel="noopener">https://www.jianshu.com/p/85192626faf3</a></p>
+<p><a href="https://www.jianshu.com/p/7b5702d3f072" target="_blank" rel="noopener">https://www.jianshu.com/p/7b5702d3f072</a></p>
+
       
     </div>
     
@@ -454,8 +487,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -515,6 +557,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#hexo的设置与美化"><span class="nav-number">1.</span> <span class="nav-text">hexo的设置与美化</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-网站设置"><span class="nav-number">1.1.</span> <span class="nav-text">1.网站设置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-更换hexo主题"><span class="nav-number">1.2.</span> <span class="nav-text">2.更换hexo主题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-主题美化"><span class="nav-number">1.3.</span> <span class="nav-text">3.主题美化</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#插件设置"><span class="nav-number">2.</span> <span class="nav-text">插件设置</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-本地搜索"><span class="nav-number">2.1.</span> <span class="nav-text">1.本地搜索</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-设置代码高亮"><span class="nav-number">2.2.</span> <span class="nav-text">2.设置代码高亮</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
